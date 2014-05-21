@@ -1,0 +1,118 @@
+
+body {
+  background-color:#1188BB;
+  color:#FFCC00;
+}
+
+#mainPage {
+  background-image:url('http://www.websecurify.com/uploads/vortex.screenshot00.png');
+  background-size:520px 520px;
+  background-repeat:no-repeat;
+  background-position:right bottom;
+  background-attachment:fixed;
+  margin-top:110px;
+  font-size:48px;
+  font-weight:bold;
+  font-face:Verdana, Geneva, sans-serif;
+  line-height:5px;
+  text-align:center;
+  min-height:500px;
+}
+
+#searchResults a:link {
+  color:#C9C9C9;
+  font-size:auto;
+  font-weight:auto;
+  font-face:Verdana, Geneva, sans-serif;
+}
+
+#resultPage {
+  background-image:url('http://www.websecurify.com/uploads/vortex.screenshot00.png');
+  background-size:150px 150px;
+  background-repeat:no-repeat;
+  background-position:right top;
+  background-attachment:fixed;
+  font-face:Verdana, Geneva, sans-serif;
+}
+
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+li {
+  float:left;
+}
+
+img {
+  width:400px;
+  height:auto;
+}
+
+nput[type="text"], textarea {
+  width:32em;
+  border-radius:2px;
+  border:solid 1px #ccc;
+  padding:0.4em;
+  background-color:#F5F5F5;
+  box-shadow:inset 0 2px 3px gba(0,0,0,0.2);
+}
+
+input[type="submit"], input[type="button"] {
+  width:18em;
+  background:white url(formelements-select.png) no-repeat center left;
+  box-shadow:0 1px 3px rgba(0,0,0,0.2);
+  border-radius:4px;
+  border:solid 1px #ccc;
+  padding:0.3em 0.5em;
+  font-weight:bold;
+  font-family:Verdana, Geneva, sans-serif;
+}
+
+#homeForm a:hover, a:active {
+  background-color:#FFCC00;
+  color:#445588;
+}
+
+#topNav a:link, a:visited {
+  display:block;
+  width:110px;
+  color:#FFCC00;
+  background-color:#445588;
+  text-align:center;
+  text-decoration:none;
+  padding:4px;
+  border-radius:4px;
+}
+
+#topNav a:hover, a:active {
+  background-color:#FFCC00;
+  color:#445588;
+}
+
+#bottomNav {
+  bottom:0;
+  position:fixed;
+  width:100%;
+  text-align:center;
+}
+
+#bottomNav ul{
+  display:inline-block;
+}
+
+#bottomNav a:link, a:visited {
+  display:block;
+  width:auto;
+  color:#FFCC00;
+  text-align:center;
+  text-decoration:none;
+  padding:4px;
+}
+
+#bottomNav a:hover, a:active {
+  color:#445588;
+  font-weight:bold;
+}
