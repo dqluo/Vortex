@@ -127,7 +127,7 @@ public class S3Implementation {
 
 		//	String key = "input/InputToS3"+1+".txt";
 
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAI6MB5GHKO6CRTEIQ", "iQ3QglXxzYwBC1uNWCBuj+6feU0VEeGlQgGVR2aB");
+		AWSCredentials credentials = new BasicAWSCredentials("", "");
 		AmazonS3 s3Client = new AmazonS3Client();
 		s3Client.setEndpoint("s3.amazonaws.com");	
 		s3Client = new AmazonS3Client(credentials);
@@ -181,7 +181,7 @@ public class S3Implementation {
 
 		//	String key = "input/InputToS3"+1+".txt";
 
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAITQVLDKWRLCPIPGQ", "SniVYM30wQpG5kwPutgD7VUifj2czRvnfIMUhXVm");
+		AWSCredentials credentials = new BasicAWSCredentials("", "");
 		AmazonS3 s3Client = new AmazonS3Client();
 		s3Client.setEndpoint("s3.amazonaws.com");	
 		s3Client = new AmazonS3Client(credentials);
@@ -237,7 +237,7 @@ public class S3Implementation {
 		String folderInBucket = "output";
 		//	String key = "input/InputToS3"+1+".txt";
 
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAJH6WPG2AIG4JPJNQ", "brpgeQvX6jptcnrBcl5a0DeUg2Y+BrObCg5qRUVd");
+		AWSCredentials credentials = new BasicAWSCredentials("", "");
 		AmazonS3 s3Client = new AmazonS3Client();
 		s3Client.setEndpoint("s3.amazonaws.com");	
 		s3Client = new AmazonS3Client(credentials);
@@ -381,7 +381,7 @@ public class S3Implementation {
 	public static ArrayList<String> listObjectsInBucketRanking(String bucketName) {
 
 		ArrayList<String> keys = new ArrayList<String>();
-		AWSCredentials credentials = new BasicAWSCredentials("AKIAI6MB5GHKO6CRTEIQ", "iQ3QglXxzYwBC1uNWCBuj+6feU0VEeGlQgGVR2aB");
+		AWSCredentials credentials = new BasicAWSCredentials("", "");
 		AmazonS3 s3Client = new AmazonS3Client();
 		s3Client.setEndpoint("s3.amazonaws.com");	
 		s3Client = new AmazonS3Client(credentials);
@@ -418,12 +418,12 @@ public class S3Implementation {
 		String accessKey = "";
 		String secretKey = "";
 		if(!folderName.contains("ouput")) {
-			accessKey = "AKIAJH6WPG2AIG4JPJNQ";
-			secretKey = "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";
+			accessKey = "";
+			secretKey = "";
 		}
 		else {
-			accessKey = "AKIAITQVLDKWRLCPIPGQ";
-			secretKey = "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";
+			accessKey = "";
+			secretKey = "";
 		}
 		
 		AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
@@ -459,20 +459,9 @@ public class S3Implementation {
 	public void pushToS3(String accesskey, String secretAccessKey, String bucketName, String folderInBucket, String inputDirForRanker, int workerID) {
 
 
-		//	AWSCredentials credentials = new BasicAWSCredentials("AKIAI6MB5GHKO6CRTEIQ", "iQ3QglXxzYwBC1uNWCBuj+6feU0VEeGlQgGVR2aB");
-		//		if(secretAccessKey.contains("+"))
-		//			secretAccessKey = secretAccessKey.replace(" ","+");
-		/*if(folderInBucket.equals("input")){
-			accesskey = "AKIAITQVLDKWRLCPIPGQ";
-			secretAccessKey = "SniVYM30wQpG5kwPutgD7VUifj2czRvnfIMUhXVm";
-		}
-		else {
-			accesskey = "AKIAI6MB5GHKO6CRTEIQ";
-			secretAccessKey = "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";
-
-		}*/
-		accesskey = "AKIAJH6WPG2AIG4JPJNQ";
-		secretAccessKey = "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";
+	
+		accesskey = "";
+		secretAccessKey = "";
 		bucketName = "imageindex";
 		folderInBucket = "imageinput";
 		AWSCredentials credentials = new BasicAWSCredentials(accesskey, secretAccessKey);
